@@ -1,8 +1,10 @@
 name: mbuild-binder
 
 channels:
+  - anaconda
   - omnia
   - janschulz
+  - bioconda
 
 dependencies:
   - python=3.4
@@ -10,10 +12,13 @@ dependencies:
   - scipy
   - mdtraj
   - packmol
-  - nglview
+  - nglview=0.5.1
   - oset
   - networkx
   - parmed
   - ipyext
+  - traitlets=4.2.1
+  - ipywidgets==4.1.1
+  - notebook=4.1.0
   - pip:
     - git+https://github.com/imodels/mbuild.git#egg=mbuild[complete]
