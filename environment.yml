@@ -1,0 +1,19 @@
+name: mbuild-binder
+
+channels:
+  - omnia
+  - janschulz
+
+dependencies:
+  - python=3.4
+  - numpy
+  - scipy
+  - mdtraj
+  - packmol
+  - nglview
+  - oset
+  - networkx
+  - parmed
+  - ipyext
+  - pip:
+    - git+https://github.com/imodels/mbuild.git#egg=mbuild[complete]
